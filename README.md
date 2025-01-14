@@ -13,10 +13,13 @@ https://docs.magicthegathering.io/
 ### Ejemplos
 Utilizando "fetch", puedes consumir la api, sin necesidad de un token/key, simplesmente agregando la url a tu proyecto de la siguiente manera y mostrando algunos parametros de la api: 
 
-async function getApi(){
-    let url = "https://api.magicthegathering.io/v1/cards";
+
+
     try{
+        let url = "https://api.magicthegathering.io/v1/cards";
+
         let respuesta = await fetch(url);
+        
         let datos = await respuesta.json();
 
         datos.cards.forEach(carta => {
@@ -27,5 +30,5 @@ async function getApi(){
     catch(error){
         console.log(error);
     }
-}
+
 ### Problemas encontrados
