@@ -23,13 +23,30 @@
         #carta{
             justify-items: center;
         }
+        #func{
+            display: flex;
+            justify-content: center;
+        }
+        #paginacion,#volver{
+            width: 5em;
+            height: 2em;
+            background-color: rgb(244, 242, 244);
+        }
+        #subir{
+            background-color: white;
+        }
         
         
     </style>
 </head>
 <body>
     <h1>Magic: The Gathering</h1>
+    
+    <div id="func"><button id="volver">⏪</button><button id="paginacion">⏩</button></div>
+    <div id="pag"></div>
     <div id="contenedor"></div>
+    <div id="func"><a id="subir" href="#">⬆</a></div>
+    
     <script src="script.js"></script>
 </body>
 </html>
