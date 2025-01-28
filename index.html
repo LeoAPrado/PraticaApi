@@ -27,6 +27,11 @@
             display: flex;
             justify-content: center;
         }
+        #buscar{
+            display: flex;
+            color: white;
+            justify-content: start;
+        }
         #paginacion,#volver{
             width: 5em;
             height: 2em;
@@ -41,7 +46,7 @@
 </head>
 <body>
     <h1>Magic: The Gathering</h1>
-    
+    <div id="buscar"><label for="">Buscar:</label><input type="text" id="buscador"></div>
     <div id="func"><button id="volver">⏪</button><button id="paginacion">⏩</button></div>
     <div id="pag"></div>
     <div id="contenedor"></div>
