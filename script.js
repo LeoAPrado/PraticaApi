@@ -125,7 +125,7 @@ async function buscarCartas(buscar) {
         
     }catch(error){
         if(error.name === 'AbortError'){
-            console.log(buscar,);
+            console.log(`${buscar}: abortado: ${signal.aborted}`);
             console.log("Solicitud cancelada");
         }else{
             console.error("Error:",error);
